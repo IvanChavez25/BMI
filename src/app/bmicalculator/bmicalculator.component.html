@@ -1,0 +1,30 @@
+<div class="image-container">
+  <img src="assets/SanJuan.jpg" alt="Background Image">
+    <div class="container">
+      <fieldset id="BMI">
+        <legend><h2>BMI Calculator</h2></legend>
+        <div>
+          <label for="weight" class="label">Weight (kg):</label>
+          <input type="number" id="weight" [(ngModel)]="weight" />
+        </div>
+        <div>
+          <label for="height" class="label">Height (cm):</label>
+          <input type="number" id="height" [(ngModel)]="height" />
+        </div>
+        <div>
+          <label for="age" class="label">Age (15 below)</label>
+          <input type="number" id="age" [(ngModel)]="age" />
+        </div>
+        <div>
+          <button id="btn-calc" (click)="calculateBMI()">Calculate BMI</button>
+        </div>
+        <div class="result">
+          THE BMI: <span>{{ bmi }}</span>
+        </div>
+        <div id="result-message" class="result">
+          RESULT: <span>{{ resultMessage }}</span>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  
