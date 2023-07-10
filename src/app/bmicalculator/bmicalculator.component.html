@@ -12,8 +12,8 @@
           <input type="number" id="height" [(ngModel)]="height" />
         </div>
         <div>
-          <label for="age" class="label">Age (15 below)</label>
-          <input type="number" id="age" [(ngModel)]="age" />
+          <label for="age" class="label">Age (15 and below):</label>
+          <input type="number" id="age" [(ngModel)]="age" max="15" />
         </div>
         <div>
           <button id="btn-calc" (click)="calculateBMI()">Calculate BMI</button>
@@ -28,3 +28,41 @@
     </div>
   </div>
   
+  <div>
+  <div class="result-container">
+    <fieldset id="BMI">
+      <legend><h3>RESULT TABLE</h3></legend>
+    <div class="result-table">  
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Weight (kg)</th>
+            <th>Height (cm)</th>
+            <th>Age</th>
+            <th>BMI</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let result of results; let i = index" 
+            [ngClass]="{ 
+              'underweight-row': result.resultMessage === 'Underweight',
+              'healthyweight-row': result.resultMessage === 'Healthy weight',
+              'overweight-row': result.resultMessage === 'Overweight',
+              'obese-row': result.resultMessage === 'Obese'
+            }">
+            <td>{{ i + 1 }}</td>
+            <td>{{ result.weight }}</td>
+            <td>{{ result.height }}</td>
+            <td>{{ result.age }}</td>
+            <td>{{ result.bmi }}</td>
+            <td>{{ result.resultMessage }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <p *ngIf="results.length === 0">No results available</p>
+    </div>
+    </fieldset>
+  </div>
+</div>

@@ -11,11 +11,17 @@ export class BmiCalculatorComponent {
   age: number = 0;
   bmi: number = 0;
   resultMessage: string = '';
+  showResult: boolean = false;
+  results: { weight: number, height: number, age: number, bmi: number, resultMessage: string }[] = [];
 
   calculateBMI() {
     const height_m = this.height / 100;
     this.bmi = this.weight / (height_m ** 2);
 
+    if (this.age > 15) {
+      this.resultMessage = 'Age must be 15 or below';
+      return;
+    } else {
     if (this.bmi >= 30) {
       this.resultMessage = 'Obese';
     } else if (this.bmi >= 25) {
@@ -37,5 +43,23 @@ export class BmiCalculatorComponent {
         this.resultMessage += ' (Underweight for children)';
       }
     }
+    const newResult = {
+      weight: this.weight,
+      height: this.height,
+      age: this.age,
+      bmi: this.bmi,
+      resultMessage: this.resultMessage
+    };
+
+    this.results.push(newResult);
+
+    this.results.sort((a, b) => a.bmi - b.bmi);
+
+    this.weight = 0;
+    this.height = 0;
+    this.age = 0;
   }
+ }
 }
+
+

@@ -64,3 +64,70 @@
     border-style: solid;
     padding: 4px 10px;
   }
+
+  .result-container {
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 201, 33);
+    padding: 25px 30px;
+    border-radius: 30px;
+    border-style: solid;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .result-container {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  
+  .result-table-container {
+    overflow: auto;
+  }
+  
+  table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .underweight-row {
+    background-color: red;
+    color: white;
+  }
+  
+  .healthyweight-row {
+    background-color: green;
+    color: white;
+  }
+  
+  .overweight-row {
+    background-color: yellow;
+  }
+  
+  .obese-row {
+    background-color: orange;
+    color: white;
+  }
+  
+  
