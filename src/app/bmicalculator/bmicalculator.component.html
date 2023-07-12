@@ -1,6 +1,17 @@
-<div class="image-container">
-  <img src="assets/SanJuan.jpg" alt="Background Image">
-    <div class="container">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  <div class="navbar">
+    <ul class="navbar-list">
+      <li><a href="#">Home</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/contacts">Contacts</a></li>
+      <li><a href="#">Calendar</a></li>
+      <li><i class="fa fa-reorder"></i></li>
+    </ul>
+  </div>
+  <div class="background-image"></div>
+  <div class="container">
       <fieldset id="BMI">
         <legend><h2>BMI Calculator</h2></legend>
         <div>
@@ -26,7 +37,6 @@
         </div>
       </fieldset>
     </div>
-  </div>
   
   <div>
   <div class="result-container">
@@ -66,3 +76,5 @@
     </fieldset>
   </div>
 </div>
+<router-outlet></router-outlet>
+</body>

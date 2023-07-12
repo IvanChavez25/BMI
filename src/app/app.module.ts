@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { LoginFormComponent } from './login/login.component';
 import { BmiCalculatorComponent } from './bmicalculator/bmicalculator.component';
 import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
+import { ContactsComponent } from './contacts/contacts.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginFormComponent,
-    BmiCalculatorComponent
+    BmiCalculatorComponent,
+    AboutComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
