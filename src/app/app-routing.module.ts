@@ -7,7 +7,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 
 const routes: Routes = [
   {path:'', component:LoginFormComponent},
-  {path:'bmi', component:BmiCalculatorComponent},
+  {path:'home', component:BmiCalculatorComponent},
   {path: 'about', component:AboutComponent},
   {path: 'contacts', component:ContactsComponent}
 ];

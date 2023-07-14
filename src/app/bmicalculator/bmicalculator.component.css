@@ -138,18 +138,38 @@ body {
     background-color: #333;
     color: #fff;
     padding: 10px;
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    background-image: url("../../assets/SanJuan1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    color: #fff;
   }
   
   .navbar-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
   }
   
   .navbar-list li {
-    display: inline-block;
-    margin-right: 10px;
+    margin-left: 10px;
   }
   
   .navbar-list li a {
@@ -161,3 +181,4 @@ body {
   .navbar-list li a:hover {
     background-color: #555;
   }
+  
