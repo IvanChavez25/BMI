@@ -4,18 +4,27 @@
   <div class="navbar">
     <div class="navbar-content">
       <div class="navbar-logo"></div>
-      <div class="logo-text">Logo Text</div>
+      <div class="logo-text">SAN JUAN BATANGAS</div>
     </div>
     <ul class="navbar-list">
       <li><a routerLink="/home">Home</a></li>
       <li><a routerLink="/about">About</a></li>
       <li><a routerLink="/contacts">Contacts</a></li>
-      <li><a href="#">Calendar</a></li>
-      <li><i class="fa fa-reorder"></i></li>
+      <li><a routerLink="/calendar">Calendar</a></li>
+      <li>
+        <button class="menu-button">
+          <i class="fa fa-reorder"></i>
+          <ul class="dropdown-menu">
+            <li><a routerLink="/bmi">BMI Calculator</a></li>
+            <li><a href="#">Barangay Ranking</a></li>
+          </ul>
+        </button>
+      </li>
     </ul>
   </div>
   <div class="background-image"></div>
   <div class="container">
+    <app-menu></app-menu>
       <fieldset id="BMI">
         <legend><h2>BMI Calculator</h2></legend>
         <div>

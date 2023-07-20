@@ -1,3 +1,4 @@
+
 .background-image {
     position: fixed;
     top: 0;
@@ -8,47 +9,6 @@
     background-image: url("../../assets/SanJuan.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .top {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .top h1 {
-    font-size: 24px;
-    font-weight: bold;
-    background-color: lightblue;
-    border-radius: 20px;
-  }
-  
-  .mission, .vision, .ten-commandments {
-    text-align: center;
-    margin-bottom: 30px;
-    background-color: lightblue;
-    border-radius: 20px;
-  }
-  
-  .mission h2, .vision h2, .ten-commandments h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    background-color: lightblue;
-    border-radius: 20px;
-  }
-  
-  .mission p, .vision p, .ten-commandments p {
-    font-size: 16px;
-    line-height: 1.5;
-    background-color: lightblue;
-    border-radius: 20px;
   }
   
   * {

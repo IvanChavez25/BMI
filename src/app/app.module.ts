@@ -8,6 +8,9 @@ import { BmiCalculatorComponent } from './bmicalculator/bmicalculator.component'
 import { FormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { MenuComponent } from './menu/menu.component';
+import { CalendarComponent } from './calendar/calendar.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { ContactsComponent } from './contacts/contacts.component';
     LoginFormComponent,
     BmiCalculatorComponent,
     AboutComponent,
-    ContactsComponent
+    ContactsComponent,
+    MenuComponent,
+    CalendarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
